@@ -1,0 +1,48 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'COMIZOA APP MANUAL'
+theme = "hextra"
+metaDataFormat = "JSON"  # 메타 데이터 형식을 JSON으로 설정
+enableRobotsTXT = true  # robots.txt 파일 활성화
+[sitemap]
+# always, hourly daily, weekly, monthly, yearly, never
+  changefreq = "weekly"
+  filename = "sitemap.xml"
+  priority = 0.5
+  
+[[menu.main]]
+  name = "Packet Analyzer"
+  url = "/PacketAnalyzer/Intro/Introduction/"
+  weight = 10
+
+[[menu.main]]
+  name = "Search"
+  weight = 5
+[[menu.main.params]]
+  type = "search"
+
+[params]
+  maxTOCLevel = 2 # TOC에서 표시할 최대 레벨을 설정
+[params.search]
+  enable = true
+  type = "flexsearch"
+[params.search.flexsearch]
+  index = "content"
+
+[params.footer]
+  enable = false
+  displayCopyright = false
+  displayPoweredBy = false
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[outputs]
+home = ["HTML", "RSS", "SITEMAP"]
+
+[[headers]]
+for = "/sitemap.xml"
+[headers.values]
+Cache-Control = "no-cache"

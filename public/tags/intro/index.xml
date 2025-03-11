@@ -1,0 +1,171 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>COMIZOA APP MANUAL – Intro</title><link>http://localhost:1313/tags/intro/</link><description>Recent content in Intro on COMIZOA APP MANUAL</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="http://localhost:1313/tags/intro/index.xml" rel="self" type="application/rss+xml"/><item><title>Intro</title><link>http://localhost:1313/packetanalyzer/intro/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/packetanalyzer/intro/</guid><description>
+&lt;h2>Table of Contents&lt;span class="hx-absolute -hx-mt-20" id="table-of-contents">&lt;/span>
+&lt;a href="#table-of-contents" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;ul>
+&lt;li>&lt;a href="introduction" >Introduction&lt;/a>&lt;/li>
+&lt;li>&lt;a href="requirement" >Requirement&lt;/a>&lt;/li>
+&lt;li>&lt;a href="feature" >Feature&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>Introduction</title><link>http://localhost:1313/packetanalyzer/intro/introduction/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/packetanalyzer/intro/introduction/</guid><description>
+&lt;p>COMIZOA Packet Analyzer는 &lt;strong>EtherCAT 패킷 캡처 및 분석을 위한 전문 도구&lt;/strong>입니다. EtherCAT 네트워크에서 발생하는 데이터를 실시간으로 모니터링하고, 패킷을 분석하여 네트워크 성능을 최적화하며, 오류를 신속하게 진단할 수 있도록 설계되었습니다.&lt;/p>
+&lt;p>EtherCAT은 고속 실시간 제어가 필요한 산업 자동화 환경에서 널리 사용되는 필드버스 기술입니다. 하지만, 네트워크에서 발생하는 패킷을 직접 분석하고 문제를 진단하는 과정은 쉽지 않습니다. COMIZOA Packet Analyzer는 이러한 문제를 해결하기 위해 &lt;strong>패킷 캡처, 프레임 분석, 에러 탐지 기능을 제공하는 강력한 분석 도구&lt;/strong>입니다.&lt;/p>
+&lt;p>&lt;img src="http://localhost:1313/resources/justgo_03.png" alt="DashView2" loading="lazy" />&lt;/p>
+&lt;h2>주요 기능&lt;span class="hx-absolute -hx-mt-20" id="주요-기능">&lt;/span>
+&lt;a href="#%ec%a3%bc%ec%9a%94-%ea%b8%b0%eb%8a%a5" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>EtherCAT 패킷 캡처 및 저장&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>실시간으로 네트워크 트래픽을 캡처하고 &lt;code>.pcap&lt;/code> 형식으로 저장&lt;/li>
+&lt;li>Wireshark 수준의 데이터 캡처 성능 제공&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>EtherCAT 프레임 분석&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>PDO, SDO, Register 등의 Read/Write 구분&lt;/li>
+&lt;li>슬레이브별 패킷 데이터 확인 및 분석&lt;/li>
+&lt;li>EtherCAT 명령 단위로 Datagram 추적&lt;/li>
+&lt;li>PDO 엔트리별 트레이스 및 시각적 차트 제공&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>에러 검출 및 이상 패턴 분석&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>네트워크 장애 감지 및 통신 끊김 감시&lt;/li>
+&lt;li>에러 패킷 분석&lt;/li>
+&lt;li>DI 신호에 대한 노이즈 검출&lt;/li>
+&lt;li>DcSync Timing 에러 검출&lt;/li>
+&lt;li>슬레이브별 통신 에러 카운터 추적&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul></description></item><item><title>Requirement</title><link>http://localhost:1313/packetanalyzer/intro/requirement/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/packetanalyzer/intro/requirement/</guid><description>
+&lt;h2>패킷 분석기의 요구와 필요성&lt;span class="hx-absolute -hx-mt-20" id="패킷-분석기의-요구와-필요성">&lt;/span>
+&lt;a href="#%ed%8c%a8%ed%82%b7-%eb%b6%84%ec%84%9d%ea%b8%b0%ec%9d%98-%ec%9a%94%ea%b5%ac%ec%99%80-%ed%95%84%ec%9a%94%ec%84%b1" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;h3>1. EtherCAT 네트워크 모니터링의 중요성&lt;span class="hx-absolute -hx-mt-20" id="1-ethercat-네트워크-모니터링의-중요성">&lt;/span>
+&lt;a href="#1-ethercat-%eb%84%a4%ed%8a%b8%ec%9b%8c%ed%81%ac-%eb%aa%a8%eb%8b%88%ed%84%b0%eb%a7%81%ec%9d%98-%ec%a4%91%ec%9a%94%ec%84%b1" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>EtherCAT은 고속 산업용 이더넷 프로토콜로, 실시간 제어가 필수적인 자동화 시스템에서 널리 사용됩니다. EtherCAT 네트워크의 안정적인 운영을 위해서는 통신 패킷을 실시간으로 분석하고 문제를 신속하게 진단할 수 있는 도구가 필요합니다.&lt;/p>
+&lt;p>일반적으로 EtherCAT 시스템에서는 다음과 같은 문제 상황이 발생할 수 있습니다:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>패킷 손실 및 지연&lt;/strong>
+&lt;ul>
+&lt;li>슬레이브 간 데이터 전송이 정상적으로 이루어지지 않을 경우, 제어 지연이 발생하여 전체 시스템 성능이 저하될 수 있음&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>잘못된 PDO/SDO 전송&lt;/strong>
+&lt;ul>
+&lt;li>설정 오류로 인해 슬레이브에서 잘못된 데이터가 송수신될 경우, 시스템 오작동 가능성 증가&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>네트워크 장애 감지 어려움&lt;/strong>
+&lt;ul>
+&lt;li>기존의 일반적인 네트워크 분석 도구(Wireshark 등)는 EtherCAT 프레임을 완벽하게 분석하지 못함&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>이상 패턴 및 오류 탐지 필요&lt;/strong>
+&lt;ul>
+&lt;li>마스터-슬레이브 간의 주기적인 통신에서 비정상적인 패턴을 탐지하고 문제를 사전에 예방하는 기능이 요구됨&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3>2. 기존 분석 도구의 한계&lt;span class="hx-absolute -hx-mt-20" id="2-기존-분석-도구의-한계">&lt;/span>
+&lt;a href="#2-%ea%b8%b0%ec%a1%b4-%eb%b6%84%ec%84%9d-%eb%8f%84%ea%b5%ac%ec%9d%98-%ed%95%9c%ea%b3%84" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>EtherCAT 네트워크 문제를 분석하기 위해 Wireshark 등의 네트워크 모니터링 도구가 사용될 수 있지만, 다음과 같은 한계가 존재합니다:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>전문적인 EtherCAT 분석 기능 부족&lt;/strong>
+&lt;ul>
+&lt;li>Wireshark는 일반적인 네트워크 패킷 분석에는 강력하지만, EtherCAT 프로토콜을 전문적으로 분석하는 기능이 부족함&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>실시간 분석 기능 미흡&lt;/strong>
+&lt;ul>
+&lt;li>EtherCAT은 1ms 단위의 실시간 데이터를 주고받기 때문에, 빠른 데이터 처리와 분석 기능이 필요함&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>사용자 친화적인 EtherCAT 데이터 시각화 부족&lt;/strong>
+&lt;ul>
+&lt;li>EtherCAT 명령 단위로 데이터를 그룹화하거나, PDO/SDO 정보를 쉽게 확인할 수 있는 기능이 제한적임&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3>3. 전용 분석기의 필요성&lt;span class="hx-absolute -hx-mt-20" id="3-전용-분석기의-필요성">&lt;/span>
+&lt;a href="#3-%ec%a0%84%ec%9a%a9-%eb%b6%84%ec%84%9d%ea%b8%b0%ec%9d%98-%ed%95%84%ec%9a%94%ec%84%b1" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>COMIZOA Packet Analyzer는 EtherCAT 네트워크의 신뢰성을 보장하고 문제를 빠르게 해결하기 위해 설계된 전문 도구입니다. 이 분석기를 사용하면 다음과 같은 이점을 얻을 수 있습니다:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>실시간 EtherCAT 패킷 캡처 및 분석&lt;/strong>
+&lt;ul>
+&lt;li>Wireshark 수준의 패킷 캡처 성능을 제공하면서 EtherCAT 프로토콜을 전문적으로 해석 가능&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>EtherCAT 프레임 및 명령 단위 추적&lt;/strong>
+&lt;ul>
+&lt;li>PDO, SDO, Register 등 개별 데이터 유형을 쉽게 확인하고 분석 가능&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>에러 검출 및 이상 패턴 분석&lt;/strong>
+&lt;ul>
+&lt;li>네트워크 장애 감지 및 시스템 안정성을 높이기 위한 진단 기능 제공&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>사용자 친화적인 UI 및 시각화 기능&lt;/strong>
+&lt;ul>
+&lt;li>WPF 기반 UI로 패킷 데이터를 직관적으로 확인하고 필터링 가능&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;p>COMIZOA Packet Analyzer는 EtherCAT 시스템의 신뢰성을 높이고, 유지보수 및 문제 해결을 보다 효과적으로 수행할 수 있도록 돕는 강력한 분석 도구입니다.&lt;/p></description></item><item><title>Feature</title><link>http://localhost:1313/packetanalyzer/intro/feature/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/packetanalyzer/intro/feature/</guid><description>
+&lt;h2>Port Selector&lt;span class="hx-absolute -hx-mt-20" id="port-selector">&lt;/span>
+&lt;a href="#port-selector" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>&lt;img src="http://localhost:1313/resources/justgo_01.png" alt="dashview_1" loading="lazy" />&lt;/p>
+&lt;ul>
+&lt;li>EtherCAT Port 를 자동으로 감지.&lt;/li>
+&lt;/ul>
+&lt;h2>DashView&lt;span class="hx-absolute -hx-mt-20" id="dashview">&lt;/span>
+&lt;a href="#dashview" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>&lt;img src="http://localhost:1313/resources/justgo_02.png" alt="dashview_1" loading="lazy" />&lt;/p>
+&lt;ul>
+&lt;li>패킷 캡쳐 중 진행 상황에 대한 DashView 제공&lt;/li>
+&lt;/ul>
+&lt;p>&lt;img src="http://localhost:1313/resources/justgo_03.png" alt="DashView2" loading="lazy" />&lt;/p>
+&lt;ul>
+&lt;li>패킷 캡쳐 완료 후 결과 분석 요약&lt;/li>
+&lt;/ul>
+&lt;h2>Frame View&lt;span class="hx-absolute -hx-mt-20" id="frame-view">&lt;/span>
+&lt;a href="#frame-view" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>&lt;img src="http://localhost:1313/resources/justgo_04.png" alt="Frame" loading="lazy" />&lt;/p>
+&lt;ul>
+&lt;li>패킷 캡쳐 결과 및 에러 패킷 분석&lt;/li>
+&lt;/ul>
+&lt;p>&lt;img src="http://localhost:1313/resources/justgo_05.png" alt="Frame2" loading="lazy" />&lt;/p>
+&lt;ul>
+&lt;li>패킷 상세 보기 제공&lt;/li>
+&lt;/ul>
+&lt;h2>PDO View&lt;span class="hx-absolute -hx-mt-20" id="pdo-view">&lt;/span>
+&lt;a href="#pdo-view" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>&lt;img src="http://localhost:1313/EtherCAT/%ed%86%b5%ec%8b%a0-%eb%8d%b0%ec%9d%b4%ed%84%b0-%ea%b4%80%eb%a6%ac/PDO%ec%99%80-Mapping" alt="PDO" loading="lazy" />&lt;/p>
+&lt;ul>
+&lt;li>PDO List&lt;/li>
+&lt;/ul>
+&lt;p>&lt;img src="http://localhost:1313/resources/justgo_07.png" alt="EtherCAT Port Detection" loading="lazy" />&lt;/p>
+&lt;ul>
+&lt;li>PDO 상세 보기 제공
+&lt;ul>
+&lt;li>SlaveModule 별 / Entry 별 보기&lt;/li>
+&lt;li>Entry 단위 Trace 보기&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2>Trace View&lt;span class="hx-absolute -hx-mt-20" id="trace-view">&lt;/span>
+&lt;a href="#trace-view" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>&lt;img src="http://localhost:1313/resources/justgo_08.png" alt="Trace" loading="lazy" />&lt;/p>
+&lt;ul>
+&lt;li>Entry 별 Chart 보기&lt;/li>
+&lt;/ul>
+&lt;h2>CoE View&lt;span class="hx-absolute -hx-mt-20" id="coe-view">&lt;/span>
+&lt;a href="#coe-view" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;h2>Register View&lt;span class="hx-absolute -hx-mt-20" id="register-view">&lt;/span>
+&lt;a href="#register-view" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>&lt;img src="http://localhost:1313/resources/justgo_09.png" alt="Register" loading="lazy" />&lt;/p>
+&lt;ul>
+&lt;li>SlaveModule 별 Register 명령 목록&lt;/li>
+&lt;li>Register Address Filter&lt;/li>
+&lt;/ul>
+&lt;p>&lt;img src="http://localhost:1313/resources/justgo_10.png" alt="Setup" loading="lazy" />&lt;/p>
+&lt;ul>
+&lt;li>AutoSave
+&lt;ul>
+&lt;li>조건에 따라 자동 저장&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>AutoStop
+&lt;ul>
+&lt;li>조건에 따라 자동 정지&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul></description></item></channel></rss>

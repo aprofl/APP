@@ -1,0 +1,20 @@
+.coffee-button {
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .coffee-link {
+    display: inline-block;
+    background-color: #ff813f;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .coffee-link:hover {
+    background-color: #ff5722;
+  }
+  
